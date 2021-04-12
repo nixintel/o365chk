@@ -54,7 +54,7 @@ Example format ```domains.txt```:
     
 To query all these domains at once:
 ```
-$./multi.sh domains.txt 
+$ ./multi.sh domains.txt 
 ```
 
 
