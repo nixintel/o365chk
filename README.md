@@ -25,7 +25,7 @@ $ python3 o365chk.py -d example.com
     $ python3 o365chk.py -d bbc.co.uk
 
     This domain is Federated
-
+{
         "AuthNForwardType": 1,
         "AuthURL": "https://gateway.id.tools.bbc.co.uk/eiam/WSFederationServlet/metaAlias/wsidp2?username=username%40bbc.co.uk&wa=wsignin1.0&wtrealm=urn%3afederation%3aMicrosoftOnline&wctx=",
         "CloudInstanceIssuerUri": "urn:federation:MicrosoftOnline",
