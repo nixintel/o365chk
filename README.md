@@ -1,4 +1,4 @@
-###o365chk.py
+### o365chk.py
 
 Simple Python script to check if there is an Office365 instance linked to a particular domain.
 
@@ -8,7 +8,7 @@ Unknown = No O365 instance for that domain
 Federated = O365 is federated
 Managed = O365 is managed directly by Microsoft
 
-###Installation and Usage
+### Installation and Usage
 
 ``````
 $ git clone https://github.com/nixintel/o365chk
@@ -19,7 +19,7 @@ $ python3 o365chk.py -d example.com
 
 ``````
 
-###Example Output
+### Example Output
 
 ``````
 $ python3 o365chk.py -d bbc.co.uk
