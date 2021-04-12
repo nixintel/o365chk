@@ -4,8 +4,8 @@ Simple Python script to check if there is an Office365 instance linked to a part
 
 There are three possible results:
 
-Unknown = No O365 instance for that domain
-Federated = O365 is federated
+Unknown = No O365 instance for that domain\
+Federated = O365 is federated\
 Managed = O365 is managed directly by Microsoft
 
 ### Installation and Usage
@@ -39,6 +39,6 @@ This domain is Federated
     "UserState": 2
 ``````
 
-###Credits
+### Credits
 
-I had the idea for this after reading this excellent article by Mike Bond: https://bond-o.medium.com/microsoft-office-365-enumeration-58f9b5ba21c8
+I had the idea for this after reading this excellent article on O365 discovery by Mike Bond: https://bond-o.medium.com/microsoft-office-365-enumeration-58f9b5ba21c8
