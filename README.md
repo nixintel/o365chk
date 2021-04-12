@@ -47,11 +47,11 @@ By default the script only checks for one domain. To query multiple domains from
 
 Example format ```domains.txt```:
 
-    ```
+    
     example.org
     somesite.net
     targetdomain.com
-    ```
+    
 To query all these domains at once:
 ```
 $./multi.sh domains.txt 
