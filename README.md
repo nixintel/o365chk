@@ -10,7 +10,7 @@ Managed = O365 is managed directly by Microsoft
 
 ### Installation and Usage
 
-```bash
+```
 $ git clone https://github.com/nixintel/o365chk && cd o365chk
 
 $ pip install -r requirements.txt
