@@ -12,13 +12,16 @@ def make_requests(target):
         r.raise_for_status()
     except requests.exceptions.HTTPError as errh:
         print("Http Error:", errh)
+        raise SystemExit(errh)
     except requests.exceptions.ConnectionError as errc:
         print("Error Connecting:", errc)
+        raise SystemExit(errc)
     except requests.exceptions.Timeout as errt:
         print("Timeout Error:", errt)
+        raise SystemExit(errt)
     except requests.exceptions.RequestException as err:
         print("Uh-oh: Something Bad Happened", err)
-        raise SystemExit(e)
+        raise SystemExit(err)
 
     r = r.json()
 
