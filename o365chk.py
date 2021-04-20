@@ -4,11 +4,15 @@ import argparse
 
 
 def make_requests(target):
+    params = {
+        'login': 'username@' + str(target),
+        'json': '1'
+    }
 
-    url = 'https://login.microsoftonline.com/getuserrealm.srf?login=username@'+str(target)+'&json=1'
+    url = 'https://login.microsoftonline.com/getuserrealm.srf'
 
     try:
-        r = requests.get(url)
+        r = requests.get(url, params=params)
         r.raise_for_status()
     except requests.exceptions.HTTPError as errh:
         print("Http Error:", errh)
