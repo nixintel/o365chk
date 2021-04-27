@@ -52,18 +52,29 @@ def get_status(response_json):
     return x
 
 
+def convert_indent(indent):
+    try:
+        return int(indent)
+    except ValueError as errv:
+        print('You need to enter a number')
+        print(errv)
+        quit()
+
+
 def main():
 
     parser = argparse.ArgumentParser(description='Checks to see if an O365 instance is associated with a domain.')
     parser.add_argument('-d', '--domain', help='Specifies the domain to be checked', required=True)
+    parser.add_argument('-i', '--indent', help='You can change the number of indents', default=4)
     args = parser.parse_args()
 
     domain = args.domain
+    number_of_indent = convert_indent(args.indent)
 
     data = make_requests(domain)
 
     result = get_status(data)
 
-    print(json.dumps(result, indent=4, sort_keys=True))
+    print(json.dumps(result, indent=number_of_indent, sort_keys=True))
 
 main()
